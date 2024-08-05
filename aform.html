@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<title>
+	Form
+</title>
+<style>
+*{
+		margin:0;
+		padding:0;
+		box-sizing:border-box;
+	}
+	.container{
+		background: rgb(240, 237, 237);
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		justify-content:center;
+		align-items:center;
+	}
+	.item h1{
+	border:2px solid #000;
+	border-radius:50px;
+	padding:5px 8px;
+	width:100px;
+}
+	.item{
+		width:400px;
+		height:500px;
+background: #fff;
+padding-top:25px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.5);
+	border-radius: 5px;
+font-size: 16px;
+	}
+	h1{
+		margin-left:150px; 
+	}
+		
+	input,button{
+		  margin-left: 20px;
+
+	}
+	input{
+		width:350px;
+		height:40px;
+		margin-top:5px;
+		border: 1px solid grey;
+		border-radius:5px;
+		text-indent: 10px;
+	}
+    button{
+    		width:350px;
+		height:40px;
+		background: #4CAF50;
+		border: none;
+		border-radius: 5px;
+		font-size: 20px;
+		color:#fff;
+		padding-bottom:1px;
+		cursor:pointer;
+    }
+    p{
+    	margin-top: 20px;
+    	margin-left: 20px;
+    	font-size: 16px;
+	    font-family:Helvetica,sans-serif;
+    }
+    #first{
+    	 	margin-top: 30px;
+    	margin-left: 20px;
+    	font-size: 16px;
+	    font-family:Helvetica,sans-serif;
+    }
+    input:hover{
+		border:1px solid blue;
+	}
+	button:hover{
+		background: orangered;
+		color: #fff;
+	}
+    
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item">
+			<form action="portfilo.html" id="noon">
+			<h1 class="logo">S&amp;G</h1>
+			<label><p id="first">First Name:</p></label>
+			<input type="text" required  name="f" id="f"><br>
+		    <p>Last Name:</p>    
+		    <input type="text" required name="g" id="g"><br>
+		       <p>Email:</p>    
+		    <input type="email" required  name="h"><br>
+		    <p>Password:</p>
+		    	<input type="password" required  name="i" id="into"><br><br>
+		    	<button onclick="onto()">Log In</button>
+		  
+			</div>
+		</form>
+	</div>
+	<script>
+     function onto(){
+     	var x=document.getElementById('f').value
+     	var y=document.getElementById('g').value
+     	var z=x+y
+     	alert("Hi, "+z);
+  
+     }
+	</script>
+	</body>
+	</html>
